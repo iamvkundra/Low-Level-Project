@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Food-Delivery-Platform/Food-Delivery-Platform.iml" filepath="$PROJECT_DIR$/Food-Delivery-Platform/Food-Delivery-Platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Low-Level-Project.iml" filepath="$PROJECT_DIR$/Low-Level-Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Restaurant-booking-system/Restaurant-booking-system.iml" filepath="$PROJECT_DIR$/Restaurant-booking-system/Restaurant-booking-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/inventory-management-system/inventory-management-system.iml" filepath="$PROJECT_DIR$/inventory-management-system/inventory-management-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/message-queue-system/message-queue-system.iml" filepath="$PROJECT_DIR$/message-queue-system/message-queue-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/subscription-based-sports/subscription-based-sports.iml" filepath="$PROJECT_DIR$/subscription-based-sports/subscription-based-sports.iml" />
+    </modules>
+  </component>
+</project>
