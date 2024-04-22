@@ -70,7 +70,7 @@ public class ParkingLot {
 
                 floor.parkVehicleToFloor(parkingSpot);
                 System.out.println("Parking allotted: Vehicle: " + Mapper.toJson(vehicle, false)
-                        + " Spot Details: " + Mapper.toJson(parkingSpot, false) + " ticket: ");
+                        + " Spot Details: " + Mapper.toJson(parkingSpot, false) + " ticket: " + Mapper.toJson(ticket, false));
                 return ticket;
             }
         }
@@ -87,6 +87,10 @@ public class ParkingLot {
         for (ParkingFloor floor : parkingFloors) {
             if (floor.checkIsParked(parkingTicket.getVehicle())) {
                 floor.removeVehicleFromFloor(parkingTicket.getVehicle());
+                ParkingTicket ticket = tickets.get(floor.getFloorId()).get(parkingTicket.getTicketId());
+
+                tickets.get(floor.getFloorId()).remove(parkingTicket.getTicketId());
+                //TODO: Calculate the fee according and returnType will be ParkingTicket
                 System.out.println("UN-PARKED VEHICLE: " + Mapper.toJson(parkingTicket.getVehicle(), false));
                 return;
             }
