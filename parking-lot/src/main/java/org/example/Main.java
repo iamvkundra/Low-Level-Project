@@ -5,6 +5,7 @@ import org.example.Utils.Mapper;
 import org.example.model.ParkingFloor;
 import org.example.model.ParkingSpot;
 
+import org.example.model.ParkingTicket;
 import org.example.service.ParkingLot;
 import org.example.vehicle.Bike;
 import org.example.vehicle.Car;
@@ -16,16 +17,16 @@ public class Main {
         //Entry point.
         ParkingLot parkingLot = ParkingLot.getInstance();
 
-        ParkingFloor floor1 = parkingLot.createParkingFloor(1);
+        parkingLot.createParkingFloor(1);
 
         //get a vehicle
         Vehicle carVehicle = new Car("JH-01-MK-0989");
         Vehicle bikeVehicle = new Bike("JH-01-MK-0909");
-        parkingLot.parkVehicle(carVehicle);
-        parkingLot.parkVehicle(bikeVehicle);
+        ParkingTicket ticket1  = parkingLot.parkVehicle(carVehicle);
+        ParkingTicket ticket2  = parkingLot.parkVehicle(bikeVehicle);
 
-        parkingLot.unParkVehicle(carVehicle);
-        parkingLot.unParkVehicle(bikeVehicle);
+        parkingLot.unParkVehicle(ticket1);
+        parkingLot.unParkVehicle(ticket2);
 
     }
 }
