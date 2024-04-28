@@ -21,7 +21,6 @@ import org.example.vendingstates.State;
 public class Main {
     public static void main(String[] args) {
         VendingMachineService vendingMachineService = new VendingMachineService();
-        Scanner sc = new Scanner(System.in);
 
         try {
             filltheInventory(vendingMachineService);
