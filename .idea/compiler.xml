@@ -9,7 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mini-phonepe" />
         <module name="parking-lot" />
+        <module name="VendingMachine" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vending-machine" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
